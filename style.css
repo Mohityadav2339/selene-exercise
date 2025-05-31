@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+/* nav-section style */
+.nav-item{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: black;
+}
+/* nav-section end */
+/* hero-section style */
+.hero-section .container{
+    height: 80vh;
+    position: relative;
+}
+.hero-section .heading h1{
+    position:absolute;
+    left: 25%;
+    top: 40%;
+}
+
+.hero-section h1{
+    position: relative;
+    letter-spacing: 0.08rem;
+}
+.hero-section h1::after{
+    content:"" ;
+    border: 5px solid lightblue;
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 100%;
+
+}
+.hero-section h1::before{
+    content: "01";
+    position: absolute;
+    left: -90px;
+    top: 20px;
+    border: 5px solid lightblue;
+    padding: 0.3rem;
+    background-color: lightblue;
+    color: white;
+}
+
+/* hero-section ends */
+
+/* transparent-section style */
+.section-2 .trans-heading{
+    filter:opacity(30%)
+}
+.section-2 .image-div{
+position: relative;
+    
+}
+.section-2 .image-div img{
+    border: 10px solid lightblue;
+}
+.section-2 .image-div h2{
+    position: absolute;
+    left: -45px;
+    top: 60px;
+}
+/* transparent-section end */
+
+/* card-section style */
+
+.section-card h3{
+    font-size: 3rem;
+}
+.section-card1{
+    width: 260px;
+    height: 300px;
+    background-image: url(/images/idea.png);
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section-card2{
+    width: 260px;
+    height: 300px;
+    background-image: url(/images/concept.png);
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section-card3{
+    width: 260px;
+    height: 300px;
+    background-image: url(/images/design.png);
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section-card4{
+    width: 260px;
+    height: 300px;
+    background-image: url(/images/develop.png);
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* card style end */
+
+/* how we work section style */
+
+.section-heading {
+  text-align: center;
+  position: relative;
+  margin: 60px 0;
+  
+}
+
+.section-heading span {
+  position: relative;
+  padding: 0 20px;
+  color: #81bcd5; /* Light blue like the image */
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-heading::before,
+.section-heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  height: 1px;
+  background-color: #cce5f1; /* Matching line color */
+}
+
+.section-heading::before {
+  left: calc(50% - 300px); /* Adjust based on width */
+}
+
+.section-heading::after {
+  right: calc(50% - 300px);
+}
+.work-section .container .row{
+    position: relative;
+    
+    background-image: url(/images/how_we_work_bg.png);
+    background-size: 100% 100%;
+    
+}
+
+.work-section .container .row p{
+    position: absolute;
+    top:60px;
+    font-size: 3rem;
+}
+.work-text h3{
+    font-size: 9rem;
+    
+
+    opacity: 0.1;
+}
+
+/* how we work section end */
+
+/* arrow section start */
+
+.arrow-section{
+    position: relative;
+}
+.link-arrow{
+    width: 5%;
+    position: absolute;
+    top: 45%;
+    right: 0
+    ;
+    
+}
+i.fa-solid.fa-arrow-right, i.fa-solid.fa-arrow-left {
+    
+    padding: 10px;
+    background-color: lightblue;
+}
+
+/* Arrow section end */
+
+/* footer image section style */
+
+.footer-image{
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    padding-inline: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer-image img{
+    padding-right: 1rem;
+}
+
+/* footer image section end */
+
+/* contact section start */
+.contact-section {
+      border: 6px solid #99d4f0;
+      padding: 2rem;
+      background-color: #fff;
+}
+
+.tab-menu {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #99d4f0;
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+}
+
+.form-control::placeholder {
+      color: #ccc;
+      font-weight: 600;
+      font-family: "Raleway", sans-serif;
+      
+}
+
+
+.btn-send {
+      border: 1px solid #ccc;
+      background: none;
+      color: #666;
+      padding: 0.5rem 2rem;
+      transition: all 0.3s ease-in-out;
+}
+
+.btn-send:hover {
+      background-color: #99d4f0;
+      color: white;
+}
+
+.form-wrapper {
+      padding-right: 2rem;
+}
+
+/* contact section end */
+
+/* footer section start */
+.footer-section{
+    width: 100%;
+    height: 200px;
+}
+
+footer p{
+    opacity: 0.2;
+}
+
+/* footer section end  */
