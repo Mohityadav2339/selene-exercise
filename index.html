@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selenet</title>
+    <title>Selene</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,8 +35,8 @@
     ></script>
     <!-- navbar section -->
     <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg bg-white">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"
               ><img
@@ -56,7 +56,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
@@ -76,6 +76,9 @@
                   <a class="nav-link" href="#">Blog</a>
                 </li>
               </ul>
+              <div>
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
             </div>
           </div>
         </nav>
@@ -84,24 +87,126 @@
     <!-- navbar section end -->
 
     <!-- hero-section start -->
-    <section class="hero-section">
+     <section class="hero-section my-5">
       <div class="container">
-        <div class="row py-5">
-          <div class="col-lg-4 heading">
-            <h1 class="fw-bold">
+        <div class="row">
+          <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active m-3"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          class="m-3"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          class="m-3"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          class="m-3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item text-end active">
+          <img
+            src="images/slider.png"
+            class="text-end img-fluid"
+            alt="..."
+            width="60%"
+            height="400px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="text-start text-dark fw-bold heading-1">
               Architecture <br />
               aims at eternity
             </h1>
+            <p class="fw-bolder">John Doe</p>
           </div>
-          <div class="col-lg-8">
-            <img
-              src="images/slider.png"
-              class="img-fluid"
-              alt="this is image"
-              width="100%"
-              height="400px"
-            />
+        </div>
+        <div class="carousel-item text-end">
+          <img
+            src="images/latest_project_slider2.png"
+            class="text-end img-fluid"
+            alt="..."
+            width="60%"
+            height="400px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="text-start text-dark fw-bold heading-2">
+              Architecture <br />
+              aims at eternity
+            </h1>
+            <p class="fw-bolder">John Doe</p >
           </div>
+        </div>
+        <div class="carousel-item text-end">
+          <img
+            src="images/latest_project_slider3.png"
+            class="text-end img-fluid"
+            alt="..."
+            width="60%"
+            height="400px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="text-start text-dark fw-bold heading-3">
+              Architecture <br />
+              aims at eternity
+            </h1>
+            <p class="fw-bolder">John Doe</p>
+          </div>
+        </div>
+        <div class="carousel-item text-end">
+          <img
+            src="images/latest_project_slider4.png"
+            class="text-end img-fluid"
+            alt="..."
+            width="60%"
+            height="400px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="text-start text-dark fw-bold heading-4">
+              Architecture <br />
+              aims at eternity
+            </h1>
+            <p class="fw-bolder">John doe</p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
         </div>
       </div>
     </section>
@@ -124,11 +229,13 @@
               doloribus placeat totam optio molestiae quo.
             </p>
           </div>
-          <div class="col-3 col-lg-3 pt-4 trans-image image-div">
+          <div class="col-3 col-lg-4 pt-4 trans-image image-div">
             <img
               src="images/house.png"
               alt="This is house image"
-              width="210px"
+              class="invisible"
+              width="70%"
+              height="inherit"
             />
             <h2 class="text-capitalize fw-bold">
               We create <br />
@@ -144,7 +251,7 @@
     <section class="card-section my-5">
       <div class="container">
         <div class="row px-5 gy-4">
-          <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 section-card-detail ">
             <div class="section-card section-card1">
               <h3 class="fw-bold">Idea</h3>
             </div>
@@ -182,19 +289,19 @@
           <div
             class="col-4 d-flex justify-content-center align-items-center work-text"
           >
-            <h3 class="z-0">1</h3>
+            <h3 class="z-0 shadow-lg">1</h3>
             <p class="z-1 text-dark fw-bold">Dexterity</p>
           </div>
           <div
             class="col-4 d-flex justify-content-center align-items-center work-text"
           >
-            <h3 class="z-0">2</h3>
+            <h3 class="z-0 shadow-lg">2</h3>
             <p class="z-1 text-dark fw-bold">Team</p>
           </div>
           <div
             class="col-4 d-flex justify-content-center align-items-center work-text"
           >
-            <h3 class="z-0">3</h3>
+            <h3 class="z-0 shadow-lg">3</h3>
             <p class="z-1 text-dark fw-bold p3">partnership</p>
           </div>
         </div>
@@ -205,51 +312,64 @@
 
     <!-- arrow-section Start -->
 
-    <section class="project-section">
-      <div class="container">
-        <div class="section-heading">
-          <span>Latest Projects</span>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row my-5">
-          <div class="col-12 col-md-12 col-lg-6 arrow-section">
-            <img
-              src="images/latest_project_slider3.png"
-              class="img-fluid"
-              alt="This is project slide image"
-              width="100%"
-              height="auto"
-            />
+  <section class="arrow-section mt-4">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item  active">
+      <div class="arrow">
+      <div class="image-slider">
+              <img src="images/latest_project_slider1.png" class="w-100" alt="this is slider image">
+    </div>
+    <div class="heading-slider">
+      <h3 class="fw-bold">Lisson gallery <br>Bell Street, Londan</h3>
+      <p class="fw-lighter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, ipsa. Cupiditate odit dolor eos. Omnis ratione odit ullam adipisci ut cumque fuga autem officia, accusamus ipsam maiores temporibus doloribus delectus?</p>
+      <button class="btn btn-light fw-lighter">Case study</button>
+    </div>
+    </div>
+    </div>
 
-            <div class="link-arrow">
-              <a href="#" class="link-tag"
-                ><i class="fa-solid fa-arrow-right"></i></a
-              ><br />
-              <a href="#" class="link-tag"
-                ><i class="fa-solid fa-arrow-left"></i
-              ></a>
-            </div>
-          </div>
-
-          <div
-            class="col-12 col-md-12 col-lg-6 pt-4 ps-2 ps-lg-5 d-flex flex-column justify-content-center"
-          >
-            <h3 class="fw-bold">
-              Lisson gallery <br />
-              Bell Street, Londan
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              aperiam vitae qui ducimus quas culpa, porro vel enim id cupiditate
-              mollitia laboriosam quia! Id molestias error magni perferendis
-              inventore temporibus?
-            </p>
-            <button class="btn btn-light w-25">Case Study</button>
-          </div>
-        </div>
+    <div class="carousel-item position-relative">
+      <div class="arrow">
+              <div class="image-slider">
+      <img src="images/latest_project_slider2.png" class="w-100" alt="...">
       </div>
-    </section>
+      <div class="heading-slider">
+        <h3 class="fw-bold">Tisson gallery <br>Bell Street, Londan</h3>
+        <p class="fw-lighter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sit tempora laboriosam cupiditate perspiciatis consequatur, sed quis dolorum minus maxime quidem facere doloribus officiis est corrupti id velit! Quibusdam, obcaecati?</p>
+        <button class="btn btn-light fw-lighter">Case study</button>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item ">
+      <div class="arrow">
+      <div class="image-slider">
+      <img src="images/latest_project_slider3.png" class="w-100" alt="...">
+      </div>
+      <div class="heading-slider">
+        <h3 class="fw-bold">Bisson gallery <br> Bell Street, Londan</h3>
+        <p class="fw-lighter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis voluptas, incidunt non, suscipit tempore aperiam repellat eligendi autem, temporibus ipsam sint quidem hic numquam praesentium perspiciatis. Reprehenderit asperiores a non!</p>
+        <button class="btn btn-light fw-lighter">Case Study</button>
+      </div>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+  </section>
 
     <!-- Arrow section End -->
 
@@ -366,51 +486,22 @@
 
     <!-- Form section start -->
     <section>
-      <div class="container my-5">
-        <div class="contact-section d-flex flex-column flex-md-row">
-          <div class="form-wrapper flex-fill">
-            <div class="tab-menu d-flex gap-4">
-              <span class="active">CONTACT US</span>
-              <span>PHONE</span>
-              <span>E-MAIL</span>
-            </div>
-
-            <form>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Name" />
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Phone" />
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" placeholder="E-mail" />
-              </div>
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  rows="4"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="btn btn-send d-flex justify-content-center"
-              >
-                Send
-              </button>
-            </form>
-          </div>
-
-          <div class="flex-fill d-flex justify-content-end">
-            <img
-              src="images/contact.png"
-              class="img-fluid"
-              alt="Building Image"
-              width="400px"
-            />
-          </div>
-        </div>
+        <div class="section-wrapper">
+    <div class="contact-section">
+      <div class="contact-form">
+        <h3>Contact Us</h3>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Phone" />
+        <input type="email" placeholder="E-mail" />
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
       </div>
+      <div class="image-wrapper">
+        <img src="images/contact.png" alt="Building Image">
+      </div>
+    </div>
+  </div>
+
     </section>
 
     <!-- Form section end -->

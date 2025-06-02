@@ -1,13 +1,212 @@
+@media (width >1400){
+  .hero-section .carousel-control-next {
+    left: 175px;
+    top: 120px;
+    border: 3px solid rgb(173, 216, 230);
+    height: 50px;
+    width: 50px;
+    background-color: rgb(173, 216, 230);
+}
+.hero-section button.carousel-control-prev {
+    top: 375px;
+}
+ .hero-section h1.text-start.text-dark.fw-bold.heading-1 {
+    bottom: 217px;
+}
+.hero-section p.fw-bolder {
+    bottom: 354px;
+}
+.hero-section .text-start.text-dark.fw-bold.heading-2 {
+    bottom: 217px;
+}
+.hero-section .text-start.text-dark.fw-bold.heading-3 {
+    bottom: 217px;
+}
+.hero-section .text-start.text-dark.fw-bold.heading-3 {
+    bottom: 217px;
+}
+.hero-section .text-start.text-dark.fw-bold.heading-4 {
+    bottom: 217px;
+}
+.hero-section p.fw-bolder {
+    bottom: 354px;
+}
+}
+/* @media only screen and (max-width: 1399px) and (min-width: 1200px){
+  h1.text-start.text-dark.fw-bold.heading-1 {
+    bottom: 92px;
+}
+h1.text-start.text-dark.fw-bold.heading-2 {
+    bottom: 92px;
+}
+h1.text-start.text-dark.fw-bold.heading-3 {
+    bottom: 92px;
+}
+h1.text-start.text-dark.fw-bold.heading-4 {
+    bottom: 92px;
+}
+} */
+/* @media only screen and (max-width: 1199px) and (min-width: 993px){
+  button.carousel-control-next {
+    top: 16px;
+}
+h1.text-start.text-dark.fw-bold.heading-4 {
+    bottom: 132px;
+}
+h1.text-start.text-dark.fw-bold.heading-1{
+  bottom: 132px;
+}
+}
+
+    
+@media (width < 992px){
+    .section-heading::after, .section-heading::before{
+            display: none;
+
+    }
+    img.text-end.img-fluid {
+           width: 100%;
+}
+h1.text-start.text-dark.fw-bold.heading-1{
+  bottom: inherit;
+}
+h1.text-start.text-dark.fw-bold.heading-2 {
+    bottom: inherit;
+    
+}
+
+
+h1.text-start.text-dark.fw-bold.heading-3{
+  bottom: inherit;
+}
+
+    
+}
 @media (max-width: 768px) {
       .form-wrapper {
         padding-right: 0;
         margin-bottom: 2rem;
       }
     }
+      /* * */
 
+@media (min-width:1200px){
+     .arrow-section .heading-slider{
+        padding: 42px;
+    }
+  .arrow-section span.carousel-control-next-icon {
+        right: 537px;
+        top: 171px;
+    }
+   
+.arrow-section span.carousel-control-prev-icon{
     
-@media (width < 992px){
-    .section-heading::after, .section-heading::before{
-            display: none;
+            left: 536px;
+            top: 214px;
+
+    }
+.hero-section .carousel-control-next{
+        left: 173px;
+        top: 120px;
+    }
+    .hero-section .carousel-control-prev {
+        left: 173px;
+        top: 240px;
+    }
+    .hero-section .carousel p {
+         bottom: 280px;
+         left: 80px;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    
+ 
+  .arrow-section .heading-slider {
+    padding: 40px;
+  }
+    .arrow-section span.carousel-control-next-icon {
+        right: 448px;
+        top: 100px;
+    }
+    .arrow-section span.carousel-control-prev-icon {
+        right: 449px;
+        top: 143px;
+       
+    }
+ 
+     h1.text-start.text-dark.fw-bold.heading-1 {
+              bottom: 79px;
+              left: 80px;
+        }
+        h1.text-start.text-dark.fw-bold.heading-2 {
+             bottom: 80px;
+             left: 80px;
+        }
+        h1.text-start.text-dark.fw-bold.heading-3 {
+            bottom: 79px;
+             left: 80px;
+        }
+        h1.text-start.text-dark.fw-bold.heading-4 {
+         bottom: 80px;
+         left: 80px;
+        }
+        .hero-section .carousel-control-next {
+             left: 147px;
+            top: 120px;
+        }
+        .hero-section .carousel-control-prev {
+             left: 149px;
+             top: 240px;
+        }
+        .hero-section .carousel p {
+             bottom: 212px;
+             left: 80px;
+        }
+ }
+    
+    
+
+  
+@media (min-width:768px) and (max-width:991px){
+  .arrow-section .heading-slider {
+
+        padding-left: 42px;
+    
+}
+.arrow-section span.carousel-control-next-icon{
+    right: 328px;
+    top: 147px;
+    }
+    .arrow-section span.carousel-control-prev-icon{
+        left: 326px;
+        top: 103px;
     }
 }
+
+@media (min-width:576px) and (max-width:767px){
+        .arrow-section span.carousel-control-next-icon {
+            right: 448px
+        }
+        .hero-section .carousel h1 {
+        bottom: 40px;
+        left: 80px;
+    }
+    .hero-section .carousel-control-prev {
+             left: 50px;
+             top: 186px;
+    }
+    .hero-section .carousel-control-next {
+            left: 50px;
+            top: 61px;
+    }
+    .hero-section .carousel p {
+             bottom: 167px;
+             left: 37px;
+        }
+}
+    
+
+
+
