@@ -440,7 +440,7 @@ border: 12px solid lightblue;
       height: 140%;
       width: auto;
       top: -20%;
-      right: 0;
+      right: 10px;
       object-fit: cover;
       z-index: 1;
     }
